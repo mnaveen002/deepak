@@ -9,15 +9,7 @@
   <version>1.0-SNAPSHOT</version>
   <name>Parent</name>
   <description>Just a pom that makes it easy to build both projects at the same time.</description>
-<profiles>
-<profile>
-<id>sonar</id>
-<properties>
-<sonar.host.url>
-http://localhost:9000
-</sonar.host.url></properties>
-</profile>
-</profiles>
+         
 <distributionManagement>
 <repository>
 <id>nexus</id>
@@ -27,7 +19,18 @@ http://localhost:9000
 <id>nexus</id>
 <url>http://localhost:8081/repository/maven-snapshots</url>
 </snapshotRepository>
-</distributionManagement>         
+</distributionManagement>    
+         
+<profiles>
+<profile>
+<id>sonar</id>
+<properties>
+<sonar.host.url>
+http://localhost:9000
+</sonar.host.url></properties>
+</profile>
+</profiles>
+    
   <modules>
     <module>multi-module</module>
     <module>single-module</module>
