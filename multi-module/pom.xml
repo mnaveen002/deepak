@@ -10,6 +10,15 @@
   <name>Multi Module Project Parent</name>
   <description>Sample multi module Maven project with a working, deployable site.</description>
   <url>http://www.example.com</url>
+  
+<repository>
+<id>nexus</id>
+<url>http://localhost:8081/repository/maven-releases</url>
+</repository>
+<snapshotRepository>
+<id>nexus</id>
+<url>http://localhost:8081/repository/maven-snapshots</url>
+</snapshotRepository>         
 
   <properties>
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
@@ -20,17 +29,9 @@
     <module>server</module>
     <module>webapp</module>
   </modules>
-         
+       
 
-<repository>
-<id>nexus</id>
-<url>http://localhost:8081/repository/maven-releases</url>
-</repository>
-<snapshotRepository>
-<id>nexus</id>
-<url>http://localhost:8081/repository/maven-snapshots</url>
-</snapshotRepository>
-         
+       
 
   <distributionManagement>
     <site>
