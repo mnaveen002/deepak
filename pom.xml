@@ -23,10 +23,10 @@ http://localhost:9000
 <id>nexus</id>
 <url>http://localhost:8081/repository/maven-releases</url>
 </repository>
-<snapshotrepository>
+<snapshotRepository>
 <id>nexus</id>
 <url>http://localhost:8081/repository/maven-snapshots</url>
-</snapshotrepository>
+</snapshotRepository>
 </distributionManagement>         
   <modules>
     <module>multi-module</module>
