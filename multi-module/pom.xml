@@ -21,7 +21,7 @@
     <module>webapp</module>
   </modules>
          
-<distributionManagement>
+
 <repository>
 <id>nexus</id>
 <url>http://localhost:8081/repository/maven-releases</url>
@@ -30,7 +30,7 @@
 <id>nexus</id>
 <url>http://localhost:8081/repository/maven-snapshots</url>
 </snapshotrepository>
-</distributionManagement>         
+         
 
   <distributionManagement>
     <site>
